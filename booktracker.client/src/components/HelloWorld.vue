@@ -1,6 +1,6 @@
 <template>
     <div class="weather-component">
-        <h1>Weather forecast</h1>
+        <h1 class="font-">Weather forecast</h1>
         <p>This component demonstrates fetching data from the server.</p>
 
         <div v-if="loading" class="loading">
@@ -11,10 +11,10 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Date</th>
-                        <th>Temp. (C)</th>
-                        <th>Temp. (F)</th>
-                        <th>Summary</th>
+                        <th class="text-slate-500">Date</th>
+                        <th class="text-slate-500">Temp. (C)</th>
+                        <th class="text-slate-500">Temp. (F)</th>
+                        <th class="text-slate-500">Summary</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -78,22 +78,3 @@
     });
 </script>
 
-<style scoped>
-th {
-    font-weight: bold;
-}
-
-th, td {
-    padding-left: .5rem;
-    padding-right: .5rem;
-}
-
-.weather-component {
-    text-align: center;
-}
-
-table {
-    margin-left: auto;
-    margin-right: auto;
-}
-</style>
